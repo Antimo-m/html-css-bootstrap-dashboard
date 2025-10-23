@@ -64,12 +64,12 @@
             <div class="row d-flex">
                 <div class="col-6 ">
                     <label class="form-label" for="nome">Nome Autore:</label>
-                    <input class="form-control" type="text" name="titolo" id="nome" placeholder="inserisci il nome dell'autore">
+                    <input class="form-control" type="text" name="titolo" id="nome" placeholder="inserisci il nome dell'autore" required>
                 </div>
               
                 <div class="col-6">
                     <label class="form-label" for="cognome">Cognome Autore:</label>
-                    <input  class="form-control"  type="text" name="titolo" id="cognome" placeholder="Inserisci cognome">
+                    <input  class="form-control"  type="text" name="titolo" id="cognome" placeholder="Inserisci cognome" required>
                 </div>
             </div>
 
@@ -84,22 +84,26 @@
               <div class="col-lg-4 ">
                 <label class="form-label" for="genere">Genere:</label>
                 <select class="form-select" name="genere" id="genere" >
-                    <option value="">Scegli un genere</option>
-                    <option value="1">Maschio</option>
-                    <option value="2">Donna</option>
+                    <option disabled selected>Scegli un genere</option>
+                    <option value="1">Storia</option>
+                    <option value="2">Geografia</option>
+                    <option value="3">Letteratura</option>
+                    <option value="4">Poesia</option>
+                    <option value="5">Scienza</option>
+                    <option value="6">Romantico</option>
                 </select>
                </div>
 
              
             <div class=" col-lg-4 py-3">
                 <label class="form-label" for="anno">Anno di Pubblicazione:</label>
-                <input class="form-control" type="text" name="anno" id="anno" placeholder="Inserisci l'anno">
+                <input class="form-control" type="number" name="anno" id="anno" placeholder="Inserisci l'anno">
             </div>
 
 
             <div class="col-lg-4" >
                 <label class="form-label" for="ISBN">ISBN# </label>
-                <input class="form-control" type="text" name="ISBN" id="ISBN" placeholder="Inserisci il codice IBSN#">
+                <input class="form-control" type="text" name="ISBN" id="ISBN" placeholder="Inserisci il codice IBSN#" >
             </div>
             </div>
             </div>
